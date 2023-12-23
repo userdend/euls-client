@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EULS</title>
+    <link rel="stylesheet" href="timetable-lib/timetablejs.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"
+      integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <div class="header">
+      <fieldset>
+        <legend>UMS Academic Schedule Finder</legend>
+        <div>
+          <span
+            ><i class="bi bi-people-fill"></i> Active User:
+            <span id="active-user">0</span></span
+          >
+        </div>
+      </fieldset>
+    </div>
+    <div class="main-parent">
+      <fieldset>
+        <legend>Tool</legend>
+        <div class="main">
+          <div>
+            <fieldset>
+              <legend>
+                <label id="label-search-box" for="filter-subject"></label>
+              </legend>
+              <input
+                type="text"
+                id="filter-subject"
+                value=""
+                onkeyup="search()"
+              />
+              <button onclick="clear_input()">Clear</button>
+            </fieldset>
+            <fieldset>
+              <legend>Search Result</legend>
+              <div id="subject-list"></div>
+            </fieldset>
+          </div>
+          <div>
+            <fieldset>
+              <legend>Generate Timetable</legend>
+              <div id="pdf-list">No subject added yet.</div>
+              <br />
+              <button id="btn-build-tt" onclick="generate_timetable()">
+                Build
+              </button>
+              <button id="btn-dw-img" onclick="download_img_timetable()">
+                Download Timetable
+              </button>
+            </fieldset>
+          </div>
+        </div>
+      </fieldset>
+      <div class="custom-tt">
+        <fieldset>
+          <legend>Timetable</legend>
+          <div class="timetable"></div>
+        </fieldset>
+      </div>
+    </div>
+    <div class="footer">
+      <fieldset>
+        <legend>About</legend>
+        <div>
+          <table border="1">
+            <tr>
+              <td>
+                <i class="bi bi-envelope-at"></i>
+                <a href="mailto:boydbayndend99@gmail.com">Email</a>
+              </td>
+              <td>
+                <i class="bi bi-linkedin"></i>
+                <a
+                  href="https://www.linkedin.com/in/boyd-bayndend-616765216/"
+                  target="_blank"
+                  >LinkedIn</a
+                >
+              </td>
+              <td>&copy; Created by Boyd</td>
+            </tr>
+          </table>
+        </div>
+      </fieldset>
+    </div>
+    <script src="canvas2image/canvas2image.js"></script>
+    <script src="timetable-lib/timetable.min.js"></script>
+    <script type="text/javascript" src="script/global.js"></script>
+    <script type="text/javascript" src="script/pdf.js"></script>
+    <script type="text/javascript" src="script/search.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
