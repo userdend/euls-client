@@ -26,6 +26,19 @@ body > div {
   flex: 1;
 }
 
+.main > div {
+  border-left: 1px solid gray;
+}
+
+.main > div > fieldset {
+  border: 0;
+  border-top: 1px solid gray;
+}
+
+#filter-subject {
+  text-transform: uppercase;
+}
+
 #subject-list {
   font-size: smaller;
   padding: 5px;

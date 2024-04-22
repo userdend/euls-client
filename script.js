@@ -6,7 +6,7 @@ window.addEventListener("load", async function () {
 
   btn_build_tt.disabled = true;
   btn_dw_img.disabled = true;
-  search_label_box.innerText = `Loading...`;
+  search_label_box.innerText = `Step 1: Loading...`;
   filter_subject.disabled = true;
 
   fetch(`${api}/api/html`)
@@ -15,7 +15,7 @@ window.addEventListener("load", async function () {
     })
     .then(function (data) {
       subjects = data;
-      search_label_box.innerText = `Search ${subjects.length} subjects`;
+      search_label_box.innerText = `Step 1: Search ${subjects.length} subjects`;
       filter_subject.disabled = false;
     })
     .catch(function (error) {

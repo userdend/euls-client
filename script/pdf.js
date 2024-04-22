@@ -87,19 +87,42 @@ let day_mapping = {
 };
 
 function build_timetable(data) {
+  let late_end = 0;
+
+  let locations = [];
+
+  data.forEach(function (item) {
+    let item_end = parseInt(item.end, 10);
+    let item_day = parseInt(item.day, 10);
+
+    late_end = item_end > late_end ? item_end : late_end;
+
+    locations.push(day_mapping[item_day]);
+  });
+
   var timetable = new Timetable();
 
-  timetable.setScope(8, 19);
+  late_end = late_end == 0 ? 19 : late_end;
 
-  timetable.addLocations([
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-    "Sunday",
-  ]);
+  locations = [...new Set(locations)];
+
+  locations.sort(function (a, b) {
+    const weekDays = [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday",
+    ];
+
+    return weekDays.indexOf(a) - weekDays.indexOf(b);
+  });
+
+  timetable.setScope(8, late_end);
+
+  timetable.addLocations(locations);
 
   Object.keys(data).forEach(function (key) {
     let startTime = data[key]["start"].split(":");
