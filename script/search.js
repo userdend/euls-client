@@ -9,6 +9,7 @@ function clear_input() {
 function search() {
   let keywords = filterSubject.value.toUpperCase();
   let maxList = 0;
+  let subString = "";
 
   subjectList.innerHTML = "";
 
@@ -26,21 +27,41 @@ function search() {
       };
       maxList += 1;
       if (maxList <= 5) {
-        subjectList.innerHTML +=
+        subString +=
           filterSubject.value == ""
             ? ""
             : `
-              <button onclick="add_to_list('${props["subject-title"]}', '${
+              <tr>
+                <td>
+                  <button onclick="add_to_list('${props["subject-title"]}', '${
                 props["source-path"]
               }')">
-                &#43;
-              </button>
-              &ensp;
-              <a href="${props["full-path"]}">
-                ${props["subject-title"].split(",")[0]}
-              </a><br /><br />
+                    Add
+                  </button>
+                </td>
+                <td>
+                  <a href="${props["full-path"]}">
+                    ${props["subject-title"].split(",")[0]}
+                  </a>
+                </td>
+              </tr>
             `;
       }
     }
   }
+
+  subjectList.innerHTML =
+    filterSubject.value == ""
+      ? ""
+      : `
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Action</th>
+          <th>Subject</th>
+        </tr>
+      </thead>
+      ${subString}
+    </table>
+    `;
 }

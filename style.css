@@ -40,11 +40,8 @@ body > div {
 }
 
 #subject-list {
-  font-size: smaller;
   padding: 5px;
-  background-color: snow;
   z-index: 10;
-  text-align: left;
 }
 
 .footer > fieldset {
