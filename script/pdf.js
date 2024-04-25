@@ -138,7 +138,11 @@ function build_timetable(data) {
       `
         ${data[key]["subject"].split(" (")[0]}<br />
         ${data[key]["venue"].split(" (")[0]}<br />
-        ${data[key]["lecturer"]}
+        ${
+          data[key]["lecturer"].length > 2
+            ? data[key]["lecturer"].split(" ").slice(0, 2).join(" ")
+            : data[key]["lecturer"]
+        }
       `,
       day_mapping[data[key]["day"]],
       new Date(null, null, null, start_h, start_m),
