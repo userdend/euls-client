@@ -48,6 +48,7 @@ div#subject-list table,
 div#pdf-list table {
   width: 100%;
   text-align: center;
+  border-collapse: collapse;
 }
 
 .footer > fieldset {

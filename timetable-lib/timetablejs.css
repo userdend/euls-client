@@ -85,7 +85,7 @@
   position: relative;
 }
 .timetable section header li:not(:last-of-type) {
-  width: 196px;
+  width: 128px;
 }
 .timetable section header li .time-label {
   display: block;
