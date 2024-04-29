@@ -1,6 +1,5 @@
 # euls-client
-
-Brief description: Discover and manage lecture schedules effortlessly for students at University Malaysia Sabah.
+Discover and manage lecture schedules effortlessly for students at University Malaysia Sabah.
 
 ## Table of Contents
 1. [Introduction](#introduction)
