@@ -1,6 +1,6 @@
-# Repository Name
+# euls-client
 
-Brief description: [Provide a concise overview of what your project does]
+Brief description: Discover and manage lecture schedules effortlessly for students at University Malaysia Sabah.
 
 ## Table of Contents
 1. [Introduction](#introduction)
@@ -11,24 +11,14 @@ Brief description: [Provide a concise overview of what your project does]
 6. [License](#license)
 
 ## Introduction
-[Expand on the brief description, explaining the purpose and goals of your project. You can also mention any relevant background information or context.]
+During my time at University Malaysia Sabah, I noticed a significant inconvenience for students at the start of every semester. To access their subject schedules, they had to navigate the official campus website, which unfortunately offered a poor user experience. With over 800 subjects listed, students were forced to tediously scroll through the extensive catalog just to locate their own schedules. Frustrated by the lack of improvement from the campus management, I took it upon myself to develop a solution that would simplify this process. Determined to create a platform that streamlines the search and organization of subject timetables, I embarked on creating this software during my studies.
 
 ## Features
-- [List key features of your project]
-- [Feature 1]
-- [Feature 2]
-- [etc.]
+- Searchable Schedule: No more endless scrolling! Quickly locate your subjects with a simple search function, saving you valuable time and effort.
+- Build Timetable with a Single Click: Say goodbye to manual scheduling hassles. Construct your personalized timetable effortlessly with just a single click, ensuring optimal organization and planning.
 
 ## Installation
-[Explain how to install your project, including any dependencies and setup instructions.]
-
-## Usage
-[Provide instructions on how to use your project. Include examples or code snippets if necessary.]
+Installing the software is a breeze. Simply copy the repository link and clone it to your local machine, or download the ZIP file for quick access.
 
 ## Contributing
-[Explain how others can contribute to your project. This could include guidelines for submitting bug reports, feature requests, or code contributions.]
-
-## License
-[Specify the license under which your project is distributed. Provide any additional licensing information if necessary.]
-
-[Additional sections, such as Acknowledgements or Frequently Asked Questions, can also be added as needed.]
+The software was developed using HTML, CSS, and JavaScript, making it accessible for any developer with decent knowledge to contribute. Welcome and appreciate contributions from the community to enhance and improve this project.
