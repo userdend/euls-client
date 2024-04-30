@@ -76,6 +76,10 @@ td {
   padding: 5px;
 }
 
+.footer table {
+  border-collapse: collapse;
+}
+
 .footer td {
   background-color: snow;
 }
