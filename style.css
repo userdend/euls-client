@@ -1,5 +1,10 @@
 body {
   background-color: #dcd9c8;
+  background-image: url("icon.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-blend-mode: soft-light;
   font-size: small;
   font-family: "Roboto", sans-serif;
 }
@@ -15,6 +20,11 @@ body > div {
 
 .main-parent {
   min-height: 81vh;
+}
+
+.main-parent fieldset {
+  background: white
+    url(https://help.ubuntu.com/lts/ubuntu-help/img/bg_dotted.png);
 }
 
 .main {
@@ -76,22 +86,28 @@ td {
   padding: 5px;
 }
 
-.footer table {
+.footer table,
+.header table {
   border-collapse: collapse;
 }
 
-.footer td {
+.footer td,
+.header td {
   background-color: snow;
-}
-
-button {
-  cursor: pointer;
 }
 
 a {
   color: royalblue;
   text-decoration: none;
   font-weight: bold;
+}
+
+button {
+  cursor: pointer;
+}
+
+i {
+  color: black;
 }
 
 @media (max-width: 1000px) {

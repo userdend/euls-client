@@ -9,6 +9,10 @@ window.addEventListener("load", async function () {
   search_label_box.innerText = `Step 1: Loading...`;
   filter_subject.disabled = true;
 
+  // Set author.
+  let author = element_mapping.get("author");
+  author.innerText = `${new Date().getFullYear()} by Boyd`;
+
   fetch(`${api}/api/html`)
     .then(function (response) {
       return response.json();
