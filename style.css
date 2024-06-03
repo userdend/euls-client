@@ -18,6 +18,10 @@ body > div {
   background-image: linear-gradient(#2980b9, #2471a3, #003399);
 }
 
+.header table {
+  color: black;
+}
+
 .main-parent {
   min-height: 81vh;
 }
