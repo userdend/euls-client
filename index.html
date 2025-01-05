@@ -13,10 +13,18 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Bootstrap Icon and Font Awesome Icon -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
     />
+    <script
+      src="https://kit.fontawesome.com/f86e7bf5e6.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- JavaScript Timetable Library -->
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"
@@ -30,10 +38,32 @@
       <fieldset>
         <legend>UMS Academic Schedule Finder</legend>
         <div>
-          <!-- <span
-            ><i class="bi bi-people-fill"></i> Active User:
-            <span id="active-user">0</span></span
-          > -->
+          <table border="1">
+            <tr>
+              <td>
+                <i style="color: royalblue" class="bi bi-check-circle-fill"></i>
+                <a href="https://jadual.ums.edu.my/">UMS Official Site</a>
+              </td>
+              <td>
+                <i class="bi bi-github">&ensp;</i
+                ><a href="https://www.github.com/userdend/euls-client"
+                  >Github</a
+                >
+              </td>
+              <td>
+                <span>Powered by</span>&ensp;<i
+                  style="color: orangered"
+                  class="fa-brands fa-html5"
+                ></i
+                >&ensp;<i
+                  style="color: dodgerblue"
+                  class="fa-brands fa-css3-alt"
+                ></i
+                >&ensp;<i style="color: goldenrod" class="fa-brands fa-js"></i
+                >&ensp;<span style="color: blueviolet" class="">.net</span>
+              </td>
+            </tr>
+          </table>
         </div>
       </fieldset>
     </div>
@@ -99,7 +129,7 @@
                   >LinkedIn</a
                 >
               </td>
-              <td>&copy; Created by Boyd</td>
+              <td>&copy; <span id="author"></span></td>
             </tr>
           </table>
         </div>

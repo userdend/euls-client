@@ -7,6 +7,7 @@ let element_mapping = new Map([
   ["label-search-box", document.getElementById("label-search-box")],
   ["filter-subject", document.getElementById("filter-subject")],
   ["subject-list", document.getElementById("subject-list")],
+  ["author", document.getElementById("author")],
 ]);
 
 let subjects = [];
