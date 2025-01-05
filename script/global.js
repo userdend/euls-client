@@ -1,4 +1,4 @@
-let api = `https://boydbayndend.bsite.net`;
+let api = `https://euls-api.onrender.com`;
 
 let element_mapping = new Map([
   ["pdf-list", document.getElementById("pdf-list")],
